@@ -1,0 +1,13 @@
+<h1>Add Blog</h1>
+<br>
+<form>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" aria-describedby="Enter Title" placeholder="Enter Title" #title>
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+    <input type="text" class="form-control" id="content" placeholder="Enter Content" #content>
+  </div>
+  <button type="button" (click)="addBlog(title, content)" class="btn btn-primary">Submit</button>
+</form>
